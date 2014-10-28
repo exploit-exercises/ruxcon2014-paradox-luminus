@@ -1,0 +1,31 @@
+
+%p 
+  Your have $#{cash} in cash and #{credits} credits. You can
+  %a{ :href => "/buyatoken" } buy a token 
+  with 7000 credits.
+
+%table.table.table-hover.table-striper
+  %caption Buy some credits
+  %thead
+    %tr
+      %th Purchase price
+      %th Credit count
+      %th Buy
+  %tbody
+    %tr
+      %td $1
+      %td 500
+      %td
+        %a{ :href => '/purchase/500' } Buy
+    %tr
+      %td $2.5
+      %td 1500
+      %td
+        %a{ :href => '/purchase/1500' } Buy
+    %tr
+      %td $5
+      %td 3500
+      %td
+        %a{ :href => '/purchase/3500' } Buy
+
+ 
